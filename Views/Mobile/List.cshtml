@@ -1,0 +1,8 @@
+﻿@model MobilesListViewModel
+<
+<h1>@Model.CurrentCategory</h1>
+@foreach (var mobile in Model.Mobiles)
+{
+    <partial name="_MobileCard" model="mobile" />
+}
+
